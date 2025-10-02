@@ -306,5 +306,3 @@ npm run seed
 ## 📄 License
 
 This project is licensed under the MIT License.
-#   K n o v a t o r _ B a c k e n d  
- 
