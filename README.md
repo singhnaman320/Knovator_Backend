@@ -1,16 +1,16 @@
 # E-commerce Backend API
 
-A robust Node.js/Express.js backend API for an e-commerce application with MongoDB integration and fallback in-memory storage.
+A Node.js/Express.js backend API for an e-commerce application with MongoDB integration and fallback in-memory storage.
 
 ## 🚀 Features
 
-- **Authentication & Authorization** - JWT-based user authentication
-- **Product Management** - Product catalog with categories and inventory
-- **Shopping Cart** - Persistent cart functionality with real-time updates
-- **Order Management** - Complete order lifecycle with cancellation support
+- **User Authentication** - JWT-based login and registration
+- **Product Catalog** - Get all products
+- **Shopping Cart** - Add, update, remove items and clear cart
+- **Order Management** - Place orders, view order history, and cancel orders
 - **Dual Storage** - MongoDB with in-memory fallback for development
-- **Input Validation** - Comprehensive request validation middleware
-- **Error Handling** - Centralized error handling with proper HTTP status codes
+- **Input Validation** - Request validation middleware
+- **Error Handling** - Centralized error responses
 
 ## 📋 Prerequisites
 
@@ -54,10 +54,10 @@ A robust Node.js/Express.js backend API for an e-commerce application with Mongo
 ```
 server/
 ├── controllers/          # Route handlers and business logic
-│   ├── authController.js     # User authentication
+│   ├── authController.js     # User authentication (register, login, profile)
 │   ├── cartController.js     # Shopping cart operations
-│   ├── orderController.js    # Order management
-│   └── productController.js  # Product catalog
+│   ├── orderController.js    # Order management (place, get, cancel)
+│   └── productController.js  # Product catalog (get all products)
 ├── middleware/          # Custom middleware functions
 │   ├── auth.js              # JWT authentication middleware
 │   └── validation.js        # Request validation schemas
